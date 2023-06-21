@@ -20,7 +20,7 @@ int main(){
     }
 
     else if(pid > 0){
-        wait(NULL);
+        //wait(NULL);
         printf("PARENT: value = %d\n", value);
         return 0;
     }
