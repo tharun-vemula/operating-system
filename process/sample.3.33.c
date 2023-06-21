@@ -4,10 +4,13 @@
 
 int value = 5;
 
+/*
+* getpid() returns the pid of the calling process
+*/
 int main(){
     pid_t pid, pid1;
     pid = fork();
-    printf("%d", pid);
+    printf("%d\n", pid);
     if(pid < 0){
         fprintf(stderr, "Fork Failed");
         return 1;
